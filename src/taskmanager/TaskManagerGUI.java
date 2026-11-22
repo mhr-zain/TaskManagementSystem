@@ -15,14 +15,26 @@ import javax.swing.table.DefaultTableModel;
  */
 public class TaskManagerGUI extends JFrame {
 
-    private final TaskManager taskManager;
+/** Manages task operations. */
+private final TaskManager taskManager;
 
-    private JTextField titleField;
-    private JTextArea descriptionArea;
-    private JComboBox<String> statusComboBox;
-    private JTable taskTable;
-    private DefaultTableModel tableModel;
-    private JLabel messageLabel;
+/** Input field for the task title. */
+private JTextField titleField;
+
+/** Input area for the task description. */
+private JTextArea descriptionArea;
+
+/** Selection box for task status. */
+private JComboBox<String> statusComboBox;
+
+/** Table displaying all tasks. */
+private JTable taskTable;
+
+/** Data model for the task table. */
+private DefaultTableModel tableModel;
+
+/** Label displaying application messages. */
+private JLabel messageLabel;
 
     /**
      * Constructs and initializes the task management interface.
