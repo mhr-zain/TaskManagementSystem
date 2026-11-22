@@ -1,18 +1,83 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Task Management System
 
-## Folder Structure
+## 1. Project Description
 
-The workspace contains two folders by default, where:
+The Task Management System is a Java-based desktop application developed as part of the Software Construction course.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+It provides a graphical user interface (GUI) to manage daily tasks efficiently.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Users can add, view, update, delete tasks and change their task status.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 2. Features
 
-## Dependency Management
+- Add new tasks.
+- Update existing tasks.
+- Delete tasks with confirmation.
+- Update task status.
+- Display tasks in a table.
+- Validate empty task titles.
+- Handle task selection errors.
+- Display appropriate messages when the task list is empty.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 3. Technologies Used
+
+- Java 21
+- Java Swing (GUI)
+- Visual Studio Code
+- Git and GitHub
+
+## 4. Project Structure
+
+```text
+TaskManagementSystem/
+│
+├── .vscode/
+├── .gitignore
+├── README.md
+├── src/
+│   ├── App.java
+│   └── taskmanager/
+│       ├── Task.java
+│       ├── TaskManager.java
+│       └── TaskManagerGUI.java
+│
+└── out/
+```
+
+## 5. Requirements
+
+- Java Development Kit (JDK) 21 or later.
+- Visual Studio Code (or another Java IDE).
+
+## 6. How to Compile and Run
+
+Open the terminal in the project root directory.
+
+Compile the project:
+
+```powershell
+javac -d out src/taskmanager/*.java
+```
+
+Run the application:
+
+```powershell
+java -cp out taskmanager.TaskManagerGUI
+```
+
+## 7. Git Version Control
+
+Git is used to track project changes and maintain version history.
+
+The project includes:
+- Git repository initialization.
+- Meaningful commits.
+- Source code tracking.
+- Git status, log and diff operations.
+
+## 8. Author
+
+**Zain Ul Abdin**
+
+Software Construction Course
